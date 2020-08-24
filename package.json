@@ -1,0 +1,37 @@
+{
+  "name": "@lcf.vs/collection-api",
+  "version": "1.0.0",
+  "description": "A @lcf.vs/collection API",
+  "main": "lib/api.js",
+  "type": "module",
+  "scripts": {
+    "example-account": "node example/account.js",
+    "example-accounts": "node example/accounts.js",
+    "example-error": "node example/error.js",
+    "example-root": "node example/root.js",
+    "jsdoc": "jsdoc -c jsdocrc.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lcfvs/collection-api.git"
+  },
+  "author": "Lcf.vs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lcfvs/collection-api/issues"
+  },
+  "homepage": "https://github.com/Lcfvs/collection-api#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jsdoc": "^3.6.5"
+  },
+  "dependencies": {
+    "@lcf.vs/collection": "^1.0.7"
+  }
+}
