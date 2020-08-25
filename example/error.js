@@ -1,6 +1,6 @@
 import api from './api/api.js'
 
-const { href } = api.types.accounts.queries().create
+const { href } = api.types().accounts.queries().create
 
 const error = Object.assign(new Error('Invalid account'), {
   code: 'INVALID_ACCOUNT',
@@ -9,4 +9,4 @@ const error = Object.assign(new Error('Invalid account'), {
   }
 })
 
-console.log(api.error(href, error), null, 2)
+console.log(JSON.stringify(api.error(href, error), null, 2))
