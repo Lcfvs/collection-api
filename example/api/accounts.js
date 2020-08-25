@@ -4,8 +4,8 @@ export const name = 'accounts'
 
 export const fields = {
   id: collection.property
-      .withName('id')
-      .withPrompt('Account ID'),
+    .withName('id')
+    .withPrompt('Account ID'),
   name: collection.property
     .withName('name')
     .withPrompt('Account name'),

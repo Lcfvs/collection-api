@@ -80,40 +80,34 @@
       }
     ],
     "queries": [
-      [
-        "create",
-        {
-          "href": "/accounts/create",
-          "prompt": "Create an account",
-          "rel": "create",
-          "data": [
-            {
-              "name": "name",
-              "prompt": "Account name"
-            }
-          ],
-          "links": [
-            {
-              "rel": "github",
-              "prompt": "Account GitHub"
-            }
-          ]
-        }
-      ],
-      [
-        "searchByName",
-        {
-          "href": "/accounts/search-by-name",
-          "prompt": "Search an account",
-          "rel": "search",
-          "data": [
-            {
-              "name": "name",
-              "prompt": "Account name"
-            }
-          ]
-        }
-      ]
+      {
+        "href": "/accounts/create",
+        "prompt": "Create an account",
+        "rel": "create",
+        "data": [
+          {
+            "name": "name",
+            "prompt": "Account name"
+          }
+        ],
+        "links": [
+          {
+            "rel": "github",
+            "prompt": "Account GitHub"
+          }
+        ]
+      },
+      {
+        "href": "/accounts/search-by-name",
+        "prompt": "Search an account by its name",
+        "rel": "search",
+        "data": [
+          {
+            "name": "name",
+            "prompt": "Account name"
+          }
+        ]
+      }
     ],
     "template": {
       "data": [
