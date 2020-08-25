@@ -1,3 +1,3 @@
 import api from './api/api.js'
 
-api.log(api.types.accounts)
+console.log(api.types.accounts, null, 2)

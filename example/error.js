@@ -1,11 +1,12 @@
 import api from './api/api.js'
 
-const { accounts } = api.types
-const { href } = accounts.queries().create
+const { href } = api.types.accounts.queries().create
 
-api.log(api.error(href, Object.assign(new Error('Invalid account'), {
+const error = Object.assign(new Error('Invalid account'), {
   code: 'INVALID_ACCOUNT',
   details: {
     name: new Error('Invalid account name')
   }
-})))
+})
+
+console.log(api.error(href, error), null, 2)
