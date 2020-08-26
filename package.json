@@ -1,6 +1,6 @@
 {
   "name": "@lcf.vs/collection-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A @lcf.vs/collection API",
   "main": "lib/api.js",
   "type": "module",
